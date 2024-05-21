@@ -1,0 +1,27 @@
+body {
+    font-family: serif;
+    color: darkblue;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("clock.jpeg");
+    background-size: cover;
+  }
+
+  .container {
+    text-align: center;
+    background-image: linear-gradient(rgba(221, 92, 92, 0.549),white); 
+    padding: 20px;
+    border:15px solid;
+    border-color: rgb(2, 2, 34);
+    border-radius: 20px;
+  }
+
+  .clock {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: blue;
+  }

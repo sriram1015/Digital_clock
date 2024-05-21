@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title> 
+  <link rel="stylesheet" href="clockstyle.css">
+</head>
+<body><div class="container">
+    <h1>CODSOFT DIGITAL CLOCK</h1>
+    <div class="clock">
+      <span id="hours">00</span> :
+      <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+  </div>
+  <script>
+    function updateClock() {
+  var DateTime = new Date();
+  var hours = DateTime.getHours();
+  var minutes = DateTime.getMinutes();
+  var seconds = DateTime.getSeconds();
+  hours = hours < 10 ? '0' + hours : hours;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+
+  document.getElementById('hours').innerText = hours;
+  document.getElementById('minutes').innerText = minutes;
+  document.getElementById('seconds').innerText = seconds;
+}
+
+setInterval(updateClock, 1000);
+
+updateClock();
+
+  </script>
+</body>
+</html>
